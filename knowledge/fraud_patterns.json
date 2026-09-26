@@ -1,0 +1,44 @@
+[
+  {
+    "doc_id": "fp_001",
+    "category": "fraud_pattern",
+    "title": "Conditional Promise with Contradiction",
+    "content": "When a customer makes a payment promise with high conditionality and contradicts prior statements, this is a strong indicator of unreliable commitment. Historical data shows 73% of such calls result in non-payment. Key markers: conditional language ('I will pay if...', 'maybe next week'), followed by contradictory statements about financial status or prior commitments. This pattern is especially risky when combined with stressed sentiment and weak obligation strength.",
+    "metadata": { "severity": "high", "source": "internal_audit_2025", "risk_weight": 0.85 }
+  },
+  {
+    "doc_id": "fp_002",
+    "category": "fraud_pattern",
+    "title": "Repeated Vague Promises Without Commitment",
+    "content": "Customers who repeatedly make vague repayment promises without specifying amounts or dates exhibit a documented delay tactic. This behavior is characterized by phrases like 'I will pay soon', 'next month definitely', without any concrete commitment. When obligation strength is weak and no specific amount is mentioned, the likelihood of actual repayment drops to below 20%. Often associated with calm or neutral sentiment, suggesting rehearsed responses.",
+    "metadata": { "severity": "medium", "source": "behavioral_analysis_2024", "risk_weight": 0.70 }
+  },
+  {
+    "doc_id": "fp_003",
+    "category": "fraud_pattern",
+    "title": "Third-Party Call Impersonation",
+    "content": "Calls where speech naturalness is flagged as suspicious and audio quality shows anomalies may indicate third-party impersonation or coached responses. Red flags include: unnatural speech patterns, background coaching detected, inconsistent voice characteristics, and scripted-sounding responses. When combined with high conditionality promises, this pattern suggests potential identity fraud or coached default behavior.",
+    "metadata": { "severity": "critical", "source": "fraud_investigation_unit_2025", "risk_weight": 0.95 }
+  },
+  {
+    "doc_id": "fp_004",
+    "category": "fraud_pattern",
+    "title": "Evasive Response Pattern",
+    "content": "Customers who give evasive responses while under stress and avoid direct answers about payment timelines exhibit a documented fraud-adjacent behavior pattern. Evasion markers include: topic deflection, answering questions with questions, providing irrelevant information when asked about payment capacity, and expressing vague distress without addressing the core repayment issue. This pattern has a 65% correlation with eventual default.",
+    "metadata": { "severity": "high", "source": "behavioral_analysis_2024", "risk_weight": 0.80 }
+  },
+  {
+    "doc_id": "fp_005",
+    "category": "fraud_pattern",
+    "title": "Aggressive Deflection and Blame-Shifting",
+    "content": "When a customer responds aggressively to repayment inquiries, blames the institution for their situation, or threatens complaints to avoid commitment, this indicates a known deflection pattern. Such behavior is designed to intimidate the agent into ending collection activities. Often paired with zero obligation strength and hostile sentiment. While not directly fraudulent, this pattern correlates with a 78% non-payment rate.",
+    "metadata": { "severity": "medium", "source": "collection_team_insights_2025", "risk_weight": 0.75 }
+  },
+  {
+    "doc_id": "fp_006",
+    "category": "fraud_pattern",
+    "title": "Low Call Stability with Suspicious Audio",
+    "content": "Calls exhibiting low stability combined with suspicious speech naturalness may indicate manipulated audio or recorded playback. Audio trust flags such as noise artifacts, inconsistent background sounds, and mechanical speech cadence suggest the call may not be a genuine live conversation. This pattern is frequently seen in coordinated fraud schemes where pre-recorded responses are used to simulate customer engagement.",
+    "metadata": { "severity": "critical", "source": "audio_forensics_2025", "risk_weight": 0.90 }
+  }
+]

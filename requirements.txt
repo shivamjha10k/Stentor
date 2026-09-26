@@ -1,0 +1,19 @@
+# === Core Framework ===
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+
+# === Supabase + Database ===
+supabase==2.11.0
+python-dotenv==1.0.1
+
+# === OpenAI (Embeddings + LLM) ===
+openai==1.59.7
+
+# === Data Validation ===
+pydantic==2.10.4
+
+# === HTTP Client ===
+httpx==0.28.1
+
+# === PDF Generation ===
+fpdf2>=2.7.0

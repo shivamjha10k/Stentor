@@ -1,0 +1,37 @@
+[
+  {
+    "doc_id": "comp_001",
+    "category": "compliance",
+    "title": "RBI Guidelines on Verbal Commitment Recording",
+    "content": "As per RBI circular on fair practices in debt collection, verbal commitments made during collection calls must be recorded with appropriate disclosure. Any verbal promise to pay must note the conditionality level, and conditional promises should not be treated as confirmed commitments. Agents must clearly inform the customer that the call is being recorded and that verbal commitments will be documented for follow-up purposes.",
+    "metadata": { "regulation": "RBI_FPC_2023", "jurisdiction": "India", "last_updated": "2024-06" }
+  },
+  {
+    "doc_id": "comp_002",
+    "category": "compliance",
+    "title": "Verbal Commitment Assessment Guidelines",
+    "content": "Verbal commitments with high conditionality should not be treated as binding agreements. Assessors must note conditionality level and recommend verification. When a customer uses phrases like 'I will try', 'if possible', or 'maybe', the commitment should be classified as conditional and flagged for follow-up rather than accepted as a confirmed repayment plan. Documentation must reflect the conditional nature of any such promise.",
+    "metadata": { "regulation": "internal_policy_v3", "jurisdiction": "India", "last_updated": "2025-01" }
+  },
+  {
+    "doc_id": "comp_003",
+    "category": "compliance",
+    "title": "Prohibited Language in Risk Assessments",
+    "content": "Risk assessments and call analysis reports must never use accusatory language such as 'fraudster', 'liar', 'criminal', or 'cheat'. Approved terminology includes: 'high-risk indicators', 'unreliable commitment pattern', 'requires verification', 'fraud-adjacent behavior', 'elevated risk profile'. Using prohibited language may expose the organization to defamation claims and regulatory penalties under consumer protection laws.",
+    "metadata": { "regulation": "internal_compliance_charter", "jurisdiction": "India", "last_updated": "2025-03" }
+  },
+  {
+    "doc_id": "comp_004",
+    "category": "compliance",
+    "title": "Data Handling for Audio Analysis",
+    "content": "Audio analysis results including speech naturalness scores, noise levels, and call stability metrics must be stored securely and treated as sensitive data. These metrics should only be used for risk assessment purposes and must not be shared externally without proper anonymization. Retention period for raw audio analysis is 180 days, after which only aggregate risk flags may be retained.",
+    "metadata": { "regulation": "DPDP_Act_2023", "jurisdiction": "India", "last_updated": "2024-09" }
+  },
+  {
+    "doc_id": "comp_005",
+    "category": "compliance",
+    "title": "Escalation Protocol for High-Risk Calls",
+    "content": "Calls flagged as high risk with fraud likelihood above 0.7 must be escalated to the compliance team within 24 hours. The escalation report must include: call summary, matched risk patterns, NLP-derived signals, and the grounded assessment. Automatic clearing of high-risk calls is prohibited without human review. Medium-risk calls with fraud likelihood between 0.4 and 0.7 should be flagged for supervisor review within 48 hours.",
+    "metadata": { "regulation": "internal_policy_v4", "jurisdiction": "India", "last_updated": "2025-02" }
+  }
+]

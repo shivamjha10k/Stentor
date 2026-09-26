@@ -1,0 +1,37 @@
+[
+  {
+    "doc_id": "rh_001",
+    "category": "risk_heuristic",
+    "title": "Risk Score Interpretation: Low Range (0-40)",
+    "content": "Risk scores between 0 and 40 indicate low risk. The customer is likely to follow through on commitments. Characteristics: strong obligation strength, no contradictions detected, clear payment timeline with specific amounts, natural speech patterns, stable call quality. Recommended action: auto_clear or flag_for_review depending on fraud likelihood. If fraud likelihood is 'low' and confidence is above 0.7, auto-clearing is appropriate.",
+    "metadata": { "score_range": "0-40", "risk_level": "low" }
+  },
+  {
+    "doc_id": "rh_002",
+    "category": "risk_heuristic",
+    "title": "Risk Score Interpretation: Medium Range (41-70)",
+    "content": "Risk scores between 41 and 70 indicate moderate risk requiring attention. Mixed signals are typically present: partial commitments, some evasion, or mild contradictions. When obligation strength is 'moderate' and sentiment shows stress without aggression, the situation often reflects genuine financial difficulty rather than fraud. Recommended action: flag_for_review. If behavioral flags exceed 2, escalate to manual_review.",
+    "metadata": { "score_range": "41-70", "risk_level": "medium" }
+  },
+  {
+    "doc_id": "rh_003",
+    "category": "risk_heuristic",
+    "title": "Risk Score Interpretation: High Range (71-100)",
+    "content": "Risk scores above 70 combined with weak obligation strength and behavioral flags indicate high risk. Recommended action: manual_review with compliance escalation if fraud likelihood exceeds 0.7. Key indicators at this level: multiple behavioral flags (3+), weak or absent payment commitment, contradictions detected, and stressed or hostile sentiment. When audio trust flags are also present, the risk of fraud or call manipulation increases significantly.",
+    "metadata": { "score_range": "71-100", "risk_level": "high" }
+  },
+  {
+    "doc_id": "rh_004",
+    "category": "risk_heuristic",
+    "title": "Obligation Strength Assessment Matrix",
+    "content": "Obligation strength is a critical modifier for risk interpretation. Strong obligation (specific amount + date + unconditional language) reduces effective risk by 15-20 points. Moderate obligation (partial specifics or mild conditionality) is neutral. Weak obligation (no specifics, high conditionality, vague timeline) increases effective risk by 10-15 points. When obligation strength is 'weak' and risk score is above 60, the call should always be flagged for manual review regardless of other signals.",
+    "metadata": { "signal_type": "obligation_strength", "risk_level": "variable" }
+  },
+  {
+    "doc_id": "rh_005",
+    "category": "risk_heuristic",
+    "title": "Audio Quality Impact on Risk Assessment",
+    "content": "Audio quality flags serve as multipliers for risk assessment rather than standalone indicators. Low call stability alone does not indicate fraud — it may reflect poor network conditions. However, when low stability is combined with suspicious speech naturalness, the probability of call manipulation increases by 40%. If both audio_trust_flags include 'low_call_stability' and 'unnatural_speech_pattern', the recommended action should be elevated by one level (e.g., flag_for_review becomes manual_review).",
+    "metadata": { "signal_type": "audio_quality", "risk_level": "variable" }
+  }
+]
